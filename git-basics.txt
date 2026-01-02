@@ -1,0 +1,2 @@
+Git is a version control system.
+It helps track changes and collaborate safely.
