@@ -1,2 +1,67 @@
 Git is a version control system.
+
 It helps track changes and collaborate safely.
+
+
+🔹 Basic Git Setup
+git --version
+git config --global user.name "Your Name"
+git config --global user.email "you@email.com"
+git config --list
+
+🔹 Create / Clone Repository
+git init                    # Initialize a new repo
+git clone <repo_url>        # Clone an existing repo
+
+🔹 Check Status & History
+git status                  # Check file status
+git log                     # Full commit history
+git log --oneline           # Short commit history
+git diff                    # View changes
+
+🔹 Staging & Commit
+git add file.txt            # Add specific file
+git add .                   # Add all files
+git commit -m "message"     # Commit changes
+git commit -am "message"    # Add + commit tracked files
+
+🔹 Branching
+git branch                  # List branches
+git branch new-branch       # Create branch
+git checkout branch-name    # Switch branch
+git checkout -b new-branch  # Create + switch
+git branch -d branch-name   # Delete branch
+
+🔹 Pull, Push & Remote
+git remote -v               # Show remotes
+git remote add origin URL   # Add remote repo
+git pull                    # Fetch + merge
+git push                    # Push changes
+git push -u origin main     # First-time push
+
+🔹 Merge & Rebase
+git merge branch-name       # Merge branch
+git rebase main             # Rebase current branch
+
+🔹 Undo / Fix Mistakes
+git restore file.txt        # Discard changes
+git reset file.txt          # Unstage file
+git reset --hard HEAD       # Reset everything
+git revert <commit_id>      # Undo commit safely
+
+🔹 Stash (Temporary Save)
+git stash                   # Save changes
+git stash list              # View stashes
+git stash apply             # Apply stash
+git stash drop              # Delete stash
+
+🔹 Tagging
+git tag                     # List tags
+git tag v1.0                # Create tag
+git push origin v1.0        # Push tag
+
+🔹 Useful Shortcuts
+git log --graph --oneline --all
+git clean -fd               # Remove untracked files
+git blame file.txt          # See who changed what
+
