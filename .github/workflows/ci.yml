@@ -19,9 +19,8 @@ jobs:
         run: |
             whoami
             pwd
-            sudo systemctl start ssh
-            sudo systemctl enable ssh
-            sudo systemctl status ssh
-            free -h
       - name: Read application file
         run: cat app.txt
+      - name: Runs only in main branch
+        if: github.ref == 'ref/heads/main'
+        run: echo "Runing in main branch"
