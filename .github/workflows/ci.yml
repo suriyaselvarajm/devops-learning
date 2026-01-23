@@ -22,4 +22,4 @@ jobs:
             sudo systemctl start ssh
             sudo systemctl enable ssh
             sudo systemctl status ssh
-            ufw status
+            sudo ufw status
