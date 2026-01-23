@@ -15,3 +15,9 @@ jobs:
         run: echo "CI pipeline is working!"
       - name: List files in repo
         run: ls -ld
+      - name: Check OS and username
+        run: |
+            whoami
+            pwd
+            sudo systemctl status ssh
+            ufw status
