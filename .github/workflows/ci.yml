@@ -23,5 +23,5 @@ jobs:
             sudo systemctl enable ssh
             sudo systemctl status ssh
             free -h
-     - name: Read Application file
-       run: cat app.txt
+       - name: Read application file
+         run: cat app.txt
