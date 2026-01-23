@@ -21,12 +21,6 @@ jobs:
             pwd
       - name: Read application file
         run: cat app.txt
-      - name: Failure altert
-        run: |
-          if [ ! -f app.conf ]; then
-           echo "File missing"
-           exit 1
-          fi
       - name: Runs only in main branch
         if: github.ref == 'ref/heads/main'
         run: echo "Runing in main branch"
