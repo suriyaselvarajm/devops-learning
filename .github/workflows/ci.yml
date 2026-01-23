@@ -25,3 +25,7 @@ jobs:
             free -h
       - name: Read application file
         run: cat app.txt
+      - name: Failure altert
+        run: exit 1
+      - name: Runs only in main branch
+        if: github.ref == 'ref/heads/main'
