@@ -24,3 +24,5 @@ jobs:
       - name: Runs only in main branch
         if: github.ref == 'ref/heads/main'
         run: echo "Runing in main branch"
+      - name: System check
+        run: ./system-check.sh
