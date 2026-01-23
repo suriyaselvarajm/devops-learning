@@ -29,3 +29,4 @@ jobs:
         run: exit 1
       - name: Runs only in main branch
         if: github.ref == 'ref/heads/main'
+        run: echo "Runing in main branch"
